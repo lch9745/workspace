@@ -49,6 +49,8 @@ extern "C" {
 
 /* USER CODE END EM */
 
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -65,6 +67,17 @@ void Error_Handler(void);
 #define LED6_GPIO_Port GPIOC
 #define LED7_Pin GPIO_PIN_3
 #define LED7_GPIO_Port GPIOC
+#define SW2_Pin GPIO_PIN_4
+#define SW2_GPIO_Port GPIOA
+#define SW2_EXTI_IRQn EXTI4_IRQn
+#define FND_SEL2_Pin GPIO_PIN_4
+#define FND_SEL2_GPIO_Port GPIOC
+#define FND0_Pin GPIO_PIN_0
+#define FND0_GPIO_Port GPIOB
+#define FND1_Pin GPIO_PIN_1
+#define FND1_GPIO_Port GPIOB
+#define FND2_Pin GPIO_PIN_2
+#define FND2_GPIO_Port GPIOB
 #define LED0_Pin GPIO_PIN_12
 #define LED0_GPIO_Port GPIOB
 #define LED1_Pin GPIO_PIN_13
@@ -73,6 +86,24 @@ void Error_Handler(void);
 #define LED2_GPIO_Port GPIOB
 #define LED3_Pin GPIO_PIN_15
 #define LED3_GPIO_Port GPIOB
+#define FND_SEL0_Pin GPIO_PIN_10
+#define FND_SEL0_GPIO_Port GPIOA
+#define FND_SEL1_Pin GPIO_PIN_11
+#define FND_SEL1_GPIO_Port GPIOA
+#define BUZZER_Pin GPIO_PIN_15
+#define BUZZER_GPIO_Port GPIOA
+#define SW1_Pin GPIO_PIN_2
+#define SW1_GPIO_Port GPIOD
+#define FND3_Pin GPIO_PIN_3
+#define FND3_GPIO_Port GPIOB
+#define FND4_Pin GPIO_PIN_4
+#define FND4_GPIO_Port GPIOB
+#define FND5_Pin GPIO_PIN_5
+#define FND5_GPIO_Port GPIOB
+#define FND6_Pin GPIO_PIN_6
+#define FND6_GPIO_Port GPIOB
+#define FND7_Pin GPIO_PIN_7
+#define FND7_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
